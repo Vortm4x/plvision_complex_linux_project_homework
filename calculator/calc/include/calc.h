@@ -1,0 +1,16 @@
+#ifndef _CALC_H_
+#define _CALC_H_
+
+double add(double a, double b);
+
+double sub(double a, double b);
+
+double mul(double a, double b);
+
+double div(double a, double b);
+
+double sqrt(double n);
+
+long long factorial(long long n);
+
+#endif // _CALC_H_
