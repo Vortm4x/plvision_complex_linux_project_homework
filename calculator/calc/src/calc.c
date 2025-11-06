@@ -1,23 +1,23 @@
 #include "calc.h"
 
 
-double add(double a, double b) {
+double calc_add(double a, double b) {
     return a + b;
 }
 
-double sub(double a, double b) {
+double calc_sub(double a, double b) {
     return a - b;
 }
 
-double mul(double a, double b) {
+double calc_mul(double a, double b) {
     return a * b;
 }
 
-double div(double a, double b) {
+double calc_div(double a, double b) {
     return a / b;
 }
 
-double sqrt(double n) {
+double calc_sqrt(double n) {
     double x = n;
     double r;
 
@@ -38,10 +38,10 @@ double sqrt(double n) {
     return r;
 }
 
-long long factorial(long long n) {
+long long calc_factorial(long long n) {
     if (n == 0) {
         return 1;
     }
 
-    return n * factorial(n - 1);
+    return n * calc_factorial(n - 1);
 }

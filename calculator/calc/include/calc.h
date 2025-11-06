@@ -1,16 +1,16 @@
 #ifndef _CALC_H_
 #define _CALC_H_
 
-double add(double a, double b);
+double calc_add(double a, double b);
 
-double sub(double a, double b);
+double calc_sub(double a, double b);
 
-double mul(double a, double b);
+double calc_mul(double a, double b);
 
-double div(double a, double b);
+double calc_div(double a, double b);
 
-double sqrt(double n);
+double calc_sqrt(double n);
 
-long long factorial(long long n);
+long long calc_factorial(long long n);
 
 #endif // _CALC_H_
