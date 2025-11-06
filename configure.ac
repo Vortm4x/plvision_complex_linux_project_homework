@@ -7,5 +7,6 @@ AC_CONFIG_FILES([
     Makefile
     calculator/Makefile
     calculator/calc/Makefile
+    formatter/Makefile
 ])
 AC_OUTPUT

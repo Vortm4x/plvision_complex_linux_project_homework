@@ -1,4 +1,4 @@
-SUBDIRS = calculator
+SUBDIRS = calculator formatter
 
 .PHONY: clean-all
 
