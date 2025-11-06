@@ -1,5 +1,7 @@
 SUBDIRS = calculator formatter
 
+ACLOCAL_AMFLAGS = -I m4
+
 .PHONY: clean-all
 
 clean-all: uninstall distclean
@@ -11,6 +13,11 @@ clean-all: uninstall distclean
 		@abs_top_srcdir@/depcomp			\
 		@abs_top_srcdir@/missing			\
 		@abs_top_srcdir@/ar-lib				\
-		@abs_top_srcdir@/install-sh
+		@abs_top_srcdir@/m4					\
+		@abs_top_srcdir@/install-sh			\
+		@abs_top_srcdir@/ltmain.sh			\
+		@abs_top_srcdir@/config.guess		\
+		@abs_top_srcdir@/config.sub
 	@find @abs_top_srcdir@ 		-name Makefile.in 	-delete
+	@find @abs_top_srcdir@ 		-name *.Plo 		-delete
 	@find @abs_top_builddir@ 	-name .deps 		-delete
