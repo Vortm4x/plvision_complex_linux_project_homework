@@ -20,4 +20,5 @@ clean-all: uninstall distclean
 		@abs_top_srcdir@/config.sub
 	@find @abs_top_srcdir@ 		-name Makefile.in 	-delete
 	@find @abs_top_srcdir@ 		-name *.Plo 		-delete
+	@find @abs_top_srcdir@ 		-name *.Po 		-delete
 	@find @abs_top_builddir@ 	-name .deps 		-delete
