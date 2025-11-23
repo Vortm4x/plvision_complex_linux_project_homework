@@ -27,8 +27,19 @@ Install binaries
 make install
 ```
 
-# Cleanup
-Remove all auto-generated files
+Generate ldconfig .conf files 
 ```bash
-make clean-all
+sudo make link
+```
+
+
+# Cleanup
+Remove generated ldconfig .conf files
+```bash
+sudo make unlink
+```
+
+Remove all auto-generated files (sudo for unlink)
+```bash
+sudo make clean-all
 ```
